@@ -1,0 +1,1 @@
+test_face_compare_features.py   31 INFO     正在测试5.4 人脸比对 - 根据2个特征----------测试用例的标题为:验证partnerid空值，接口返回正确

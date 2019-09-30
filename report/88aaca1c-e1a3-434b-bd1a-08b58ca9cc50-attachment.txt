@@ -1,0 +1,1 @@
+test_face_compare_images.py   30 INFO     正在测试5.3 人脸比对-根据两张图片----------测试用例的标题为:验证image1参数空值时，服务器处理正常

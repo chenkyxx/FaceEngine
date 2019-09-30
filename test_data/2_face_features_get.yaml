@@ -1,0 +1,80 @@
+
+title: "5.2 人脸特征提取"
+method: "post"
+url: "http://175.168.0.139:8080/"
+sign: ""
+cases:
+# 0为2K。1为8K
+- case_title: 测试正常流程，验证能进行2K特征提取
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 0}
+  }
+- case_title: 测试正常流程， 验证能进行8K特征提取
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 1}
+  }
+- case_title: 测试正常流程， 验证能对照片中特定位置的人脸进行特征提取
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 1, "position": {"left": "", "right": "", "top": "", "bottom": ""}}
+  }
+- case_title: 未授权时，不能进行人脸特征提取接口调用
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权未授权partnerId", "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证reqId为空值时，服务器不会出错
+  body: {"reqId": "",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证reqId为空时，服务器不会出错
+  body: {"reqId": ~,
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证data为空值时，服务器不会出错
+  body: {"reqId": "reqId",
+  "data": ""
+  }
+- case_title: 验证data为空时，服务器不会出错
+  body: {"reqId": "",
+  "data": ~
+  }
+- case_title: 验证partnerid错误时，接口返回正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "错误partnerId", "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证partnetId为空时，服务器正确处理
+  body: {"reqId": "reqId",
+  "data": {"partnerId": ~, "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证partnetId为空值时，服务器正确处理
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "", "image": "1.jpg", "type": 1}
+  }
+- case_title: 验证image参数为非base64图片编码格式时，服务器能正确处理
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "ffggfghfvbfhfhhfhg", "type": 1}
+  }
+- case_title: 验证image参数大于1M时，不能进行特征提取
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "大于1M.jpg", "type": 1}
+  }
+#- case_title: 验证type为-1时，服务器能正确响应
+#  body: {"reqId": "reqId",
+#  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": -1}
+#  }
+- case_title: 验证type为-1时，服务器能正确响应
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": -1}
+  }
+- case_title: 验证type为2时，服务器能正确响应
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 2}
+  }
+- case_title: 验证type为非int时，服务器能正确响应
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": "type"}
+  }
+- case_title: 验证position为空/空值时，能正确提取最大的人脸?
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId", "image": "1.jpg", "type": 1}
+  }
+

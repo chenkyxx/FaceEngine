@@ -1,0 +1,188 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1569830659978" stop="1569830661354">
+  <name>testcase.test_face_detect</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1569830659978" status="passed" stop="1569830660042">
+      <name>TestFaceDetect.test_01[data_engine0]</name>
+      <attachments>
+        <attachment source="3ed5c9a1-e615-4e5b-bae5-296341cbf145-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660044" status="passed" stop="1569830660123">
+      <name>TestFaceDetect.test_01[data_engine1]</name>
+      <attachments>
+        <attachment source="1ec90bd9-2dfb-4b4c-9afc-30279cc10aed-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660125" status="passed" stop="1569830660205">
+      <name>TestFaceDetect.test_01[data_engine2]</name>
+      <attachments>
+        <attachment source="958f75f6-211b-40e0-9aa4-349bbb709ffa-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660207" status="passed" stop="1569830660289">
+      <name>TestFaceDetect.test_01[data_engine3]</name>
+      <attachments>
+        <attachment source="1fd87ed2-821a-4cc7-91a7-327238498b64-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660292" status="passed" stop="1569830660372">
+      <name>TestFaceDetect.test_01[data_engine4]</name>
+      <attachments>
+        <attachment source="f0e76bbd-bc55-4d21-afc9-5074f98bb539-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660378" status="passed" stop="1569830660460">
+      <name>TestFaceDetect.test_01[data_engine5]</name>
+      <attachments>
+        <attachment source="a1e2fe8b-bc34-4f68-bd36-8e0f39b83ab4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660462" status="passed" stop="1569830660506">
+      <name>TestFaceDetect.test_01[data_engine6]</name>
+      <attachments>
+        <attachment source="580edfca-9617-42c4-ab18-2abb7b3f3784-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660509" status="passed" stop="1569830660550">
+      <name>TestFaceDetect.test_01[data_engine7]</name>
+      <attachments>
+        <attachment source="6a5629df-eab3-407d-b5de-d8abe30dd83b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660577" status="passed" stop="1569830660660">
+      <name>TestFaceDetect.test_01[data_engine8]</name>
+      <attachments>
+        <attachment source="6b102d80-b4ca-4f68-821a-e357f8bbf94f-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660663" status="passed" stop="1569830660745">
+      <name>TestFaceDetect.test_01[data_engine9]</name>
+      <attachments>
+        <attachment source="76c9f765-779f-4db7-b617-1a6ff38c3b7e-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660747" status="passed" stop="1569830660829">
+      <name>TestFaceDetect.test_01[data_engine10]</name>
+      <attachments>
+        <attachment source="c11a1009-45d5-4aa8-9b9b-049f38ad0b85-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660833" status="passed" stop="1569830660874">
+      <name>TestFaceDetect.test_01[data_engine11]</name>
+      <attachments>
+        <attachment source="93ded4bb-d044-452e-b794-3a5fe994c48c-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830660876" status="passed" stop="1569830661354">
+      <name>TestFaceDetect.test_01[data_engine12]</name>
+      <attachments>
+        <attachment source="98fca501-8153-44d5-8d27-5d71fb2eb503-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

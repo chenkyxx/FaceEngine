@@ -1,0 +1,1 @@
+test_face_search_images.py   30 INFO     正在测试5.5 人脸查找 - 根据图片----------测试用例的标题为:验证matchNum为11时，服务器能正确处理

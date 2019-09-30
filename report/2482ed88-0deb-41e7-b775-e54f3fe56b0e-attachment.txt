@@ -1,0 +1,1 @@
+test_face_search_features.py   29 INFO     正在测试5.6 人脸查找 - 根据特征----------测试用例的标题为:验证partnetId为空时，服务器正确处理

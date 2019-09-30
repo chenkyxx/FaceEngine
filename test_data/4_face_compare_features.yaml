@@ -1,0 +1,67 @@
+
+title: "5.4 人脸比对 - 根据2个特征"
+method: "post"
+url: "http://175.168.0.139:8080/"
+sign: "api/face/identify/compareByFeature"
+cases:
+- case_title: 能对同一个的人的两个8K特征进行正确比对
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "8k_1.txt", "feature2": "8k_1.txt"}
+  }
+- case_title: 对不同的人的两个8K特征进行正确比对
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "8k_1.txt", "feature2": "8k_2.txt"}
+  }
+- case_title: 对同一人进行2K特征比对时，服务器能正确响应
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 未授权时，不能进行特征比对
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "未授权partnerId","feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证reqId为空值时，服务器不会出错
+  body: {"reqId": "",
+  "data": {"partnerId": "授权partnerId","feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证reqId为空时，服务器不会出错
+  body: {"reqId": ~,
+  "data": {"partnerId": "授权partnerId","feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证data为空值时，服务器不会出错
+  body: {"reqId": "reqId",
+  "data": ""
+  }
+- case_title: 验证data为空时，服务器不会出错
+  body: {"reqId": "reqId",
+  "data": ~
+  }
+- case_title: 验证partnerid空值，接口返回正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "","feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证partnerid空，接口返回正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": ~,"feature1": "2k_1.txt", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证features1为kong值时，服务器处理正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "", "feature2": "2k_1.txt"}
+  }
+- case_title: 验证features1为kong时，服务器处理正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": ~, "feature2": "2k_1.txt"}
+  }
+- case_title: 验证features2为kong时，服务器处理正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "2k_1.txt", "feature2": ~}
+  }
+- case_title: 验证features2为kong值时，服务器处理正确
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "2k_1.txt", "feature2": ""}
+  }
+- case_title: 验证features1为其他错误数据时，服务器能正确处理
+  body: {"reqId": "reqId",
+  "data": {"partnerId": "授权partnerId","feature1": "error_data.txt", "feature2": "2k_1.txt"}
+  }
+

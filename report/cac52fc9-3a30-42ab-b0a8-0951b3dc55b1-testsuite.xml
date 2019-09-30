@@ -1,0 +1,278 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1569830665683" stop="1569830668162">
+  <name>testcase.test_get_features</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1569830665683" status="passed" stop="1569830665765">
+      <name>TestGetFeatures.test_01[data_engine0]</name>
+      <attachments>
+        <attachment source="37ce1f55-0c15-4c33-98bb-33efccfefcb7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830665767" status="passed" stop="1569830665829">
+      <name>TestGetFeatures.test_01[data_engine1]</name>
+      <attachments>
+        <attachment source="f64c612c-f5a3-4792-b04c-d6003d8e7a83-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830665844" status="passed" stop="1569830665923">
+      <name>TestGetFeatures.test_01[data_engine2]</name>
+      <attachments>
+        <attachment source="7b10d784-b9c4-4bf6-8e8d-205ea08389c0-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830665925" status="passed" stop="1569830665991">
+      <name>TestGetFeatures.test_01[data_engine3]</name>
+      <attachments>
+        <attachment source="be68a04a-8326-43f5-a7b3-de819550b02f-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830665993" status="passed" stop="1569830666053">
+      <name>TestGetFeatures.test_01[data_engine4]</name>
+      <attachments>
+        <attachment source="a10eb972-f502-423f-9de5-4320cd541fa4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666055" status="passed" stop="1569830666122">
+      <name>TestGetFeatures.test_01[data_engine5]</name>
+      <attachments>
+        <attachment source="a2b90900-ab49-4720-ac44-50153fc8278b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666125" status="passed" stop="1569830666183">
+      <name>TestGetFeatures.test_01[data_engine6]</name>
+      <attachments>
+        <attachment source="5f66cd1b-198a-4a3a-a587-d651eb200c1b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666184" status="passed" stop="1569830666245">
+      <name>TestGetFeatures.test_01[data_engine7]</name>
+      <attachments>
+        <attachment source="6b818b9f-dcc7-4b94-8b28-ee6b504a202f-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666247" status="passed" stop="1569830666313">
+      <name>TestGetFeatures.test_01[data_engine8]</name>
+      <attachments>
+        <attachment source="f5c730e0-f69b-4bd8-9767-93a3fe98b852-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666316" status="passed" stop="1569830666384">
+      <name>TestGetFeatures.test_01[data_engine9]</name>
+      <attachments>
+        <attachment source="04697c4e-dc5e-4003-afa7-4e2edd9fa4ec-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666386" status="passed" stop="1569830666449">
+      <name>TestGetFeatures.test_01[data_engine10]</name>
+      <attachments>
+        <attachment source="f8b263f7-37b7-4b03-9e00-41d15aa1f89a-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666450" status="passed" stop="1569830666508">
+      <name>TestGetFeatures.test_01[data_engine11]</name>
+      <attachments>
+        <attachment source="a89840b8-6702-4efb-a6ce-6f6167e80379-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830666510" status="passed" stop="1569830667904">
+      <name>TestGetFeatures.test_01[data_engine12]</name>
+      <attachments>
+        <attachment source="65ce19ee-645d-4412-a0a3-c7f96d061395-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830667906" status="passed" stop="1569830667969">
+      <name>TestGetFeatures.test_01[data_engine13]</name>
+      <attachments>
+        <attachment source="ebe0203a-4036-46cb-869e-8eefc21297ce-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830667971" status="passed" stop="1569830668033">
+      <name>TestGetFeatures.test_01[data_engine14]</name>
+      <attachments>
+        <attachment source="b9e27e60-70a1-4b96-b5d0-377882e29778-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830668035" status="passed" stop="1569830668096">
+      <name>TestGetFeatures.test_01[data_engine15]</name>
+      <attachments>
+        <attachment source="a8bc4313-e375-4bc2-9214-017749b5558d-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830668099" status="passed" stop="1569830668162">
+      <name>TestGetFeatures.test_01[data_engine16]</name>
+      <attachments>
+        <attachment source="2d21e4c4-5aa6-445a-8ad9-4f324979d9e7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="获取人脸特征模块"/>
+        <label name="testId" value="测试标题"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

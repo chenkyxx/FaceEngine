@@ -1,0 +1,1 @@
+test_get_features.py        32 INFO     正在测试5.2 人脸特征提取----------测试用例的标题为:验证partnerid错误时，接口返回正确

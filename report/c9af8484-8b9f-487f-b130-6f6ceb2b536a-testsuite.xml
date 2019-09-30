@@ -1,0 +1,164 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1569830657407" stop="1569830657628">
+  <name>testcase.test_Api</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1569830657407" status="passed" stop="1569830657478">
+      <description>人脸注册</description>
+      <name>TestApi.test_0_face_register</name>
+      <attachments>
+        <attachment source="cb7e8d8f-3dc7-4d8a-847d-30e6afe1b747-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657482" status="passed" stop="1569830657511">
+      <description>人脸删除</description>
+      <name>TestApi.test_1_face_remove</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657512" status="passed" stop="1569830657525">
+      <description>人脸清空</description>
+      <name>TestApi.test_2_face_clear</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657526" status="passed" stop="1569830657536">
+      <description>获取单个人脸信息</description>
+      <name>TestApi.test_3_get_one_face</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657536" status="passed" stop="1569830657547">
+      <description>查询当前组内人脸信息</description>
+      <name>TestApi.test_4_query_group_faces</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657553" status="passed" stop="1569830657563">
+      <description>人脸检测</description>
+      <name>TestApi.test_5_face_detect</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657564" status="passed" stop="1569830657574">
+      <description>根据两张图片进行比对</description>
+      <name>TestApi.test_6_face_compare_by_images</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657574" status="passed" stop="1569830657584">
+      <description>人脸特征提取</description>
+      <name>TestApi.test_6_face_get_features</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657584" status="passed" stop="1569830657594">
+      <description>根据两个特征进行比对</description>
+      <name>TestApi.test_7_face_compare_by_features</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657595" status="passed" stop="1569830657604">
+      <description>人脸查找 根据图片</description>
+      <name>TestApi.test_8_face_search_by_image</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657605" status="passed" stop="1569830657614">
+      <description>人脸记录查询</description>
+      <name>TestApi.test_9_9_face_record_query</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830657615" status="passed" stop="1569830657628">
+      <description>人脸查找 根据特征</description>
+      <name>TestApi.test_9_face_search_by_feature</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

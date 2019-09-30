@@ -1,0 +1,244 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1569830661355" stop="1569830662673">
+  <name>testcase.test_face_search_features</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1569830661355" status="passed" stop="1569830661426">
+      <name>TestFaceSearchFeatures.test_01[data_engine0]</name>
+      <attachments>
+        <attachment source="d29404dc-253e-437c-9659-cb8db10b8978-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661428" status="passed" stop="1569830661514">
+      <name>TestFaceSearchFeatures.test_01[data_engine1]</name>
+      <attachments>
+        <attachment source="5613a001-930a-4d67-add1-f7b4540e720d-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661566" status="passed" stop="1569830661630">
+      <name>TestFaceSearchFeatures.test_01[data_engine2]</name>
+      <attachments>
+        <attachment source="2d602b88-8e20-4352-b039-8f23153e9e7c-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661632" status="passed" stop="1569830661714">
+      <name>TestFaceSearchFeatures.test_01[data_engine3]</name>
+      <attachments>
+        <attachment source="2b6adae4-6479-4026-bda0-6a1884991cc9-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661717" status="passed" stop="1569830661800">
+      <name>TestFaceSearchFeatures.test_01[data_engine4]</name>
+      <attachments>
+        <attachment source="eeba4231-1645-4bf7-a613-8e702ac6f692-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661802" status="passed" stop="1569830661870">
+      <name>TestFaceSearchFeatures.test_01[data_engine5]</name>
+      <attachments>
+        <attachment source="5e64a8da-7ead-4d10-ad56-d6f0080d37fc-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661873" status="passed" stop="1569830661963">
+      <name>TestFaceSearchFeatures.test_01[data_engine6]</name>
+      <attachments>
+        <attachment source="1b909194-302e-470e-932a-a33d671e4eea-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830661965" status="passed" stop="1569830662038">
+      <name>TestFaceSearchFeatures.test_01[data_engine7]</name>
+      <attachments>
+        <attachment source="f6624c4d-b15a-47b0-8deb-57e7e8971a9b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662040" status="passed" stop="1569830662105">
+      <name>TestFaceSearchFeatures.test_01[data_engine8]</name>
+      <attachments>
+        <attachment source="2482ed88-0deb-41e7-b775-e54f3fe56b0e-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662108" status="passed" stop="1569830662175">
+      <name>TestFaceSearchFeatures.test_01[data_engine9]</name>
+      <attachments>
+        <attachment source="fbf1b6df-a9a7-4eba-95e2-4558df4eee68-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662179" status="passed" stop="1569830662244">
+      <name>TestFaceSearchFeatures.test_01[data_engine10]</name>
+      <attachments>
+        <attachment source="fbc408f2-4db6-40f5-a761-c3ec1c67fbe7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662246" status="passed" stop="1569830662313">
+      <name>TestFaceSearchFeatures.test_01[data_engine11]</name>
+      <attachments>
+        <attachment source="1992fa41-7011-466c-b255-606d8a7348ad-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662315" status="passed" stop="1569830662382">
+      <name>TestFaceSearchFeatures.test_01[data_engine12]</name>
+      <attachments>
+        <attachment source="5f40aa6a-0964-4008-bf46-291df42004f5-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662383" status="passed" stop="1569830662463">
+      <name>TestFaceSearchFeatures.test_01[data_engine13]</name>
+      <attachments>
+        <attachment source="079ca3f6-b452-4a51-b8c5-fd753c5ab261-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662466" status="passed" stop="1569830662538">
+      <name>TestFaceSearchFeatures.test_01[data_engine14]</name>
+      <attachments>
+        <attachment source="ca029376-4370-4d6e-ad24-297332778eac-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662540" status="passed" stop="1569830662605">
+      <name>TestFaceSearchFeatures.test_01[data_engine15]</name>
+      <attachments>
+        <attachment source="33dee624-d959-4f59-bc65-96b97434cd81-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1569830662607" status="passed" stop="1569830662673">
+      <name>TestFaceSearchFeatures.test_01[data_engine16]</name>
+      <attachments>
+        <attachment source="232225c2-96b5-41bf-bda3-d983d4040e79-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="37456-MainThread"/>
+        <label name="host" value="DESKTOP-AUNTDPH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

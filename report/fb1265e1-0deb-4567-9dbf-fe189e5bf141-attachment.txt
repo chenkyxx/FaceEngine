@@ -1,0 +1,1 @@
+test_face_compare_features.py   31 INFO     正在测试5.4 人脸比对 - 根据2个特征----------测试用例的标题为:验证features1为其他错误数据时，服务器能正确处理
