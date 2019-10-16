@@ -1,0 +1,11 @@
+2019-10-16 16:56:08,505 - root - INFO - produce_data - add_one_partner_group - 35 - {"reqId":"","status":0,"msg":"ok"}
+2019-10-16 17:02:02,228 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e2af402-eff3-11e9-b364-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,261 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e3b3c8a-eff3-11e9-81d5-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,273 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e404224-eff3-11e9-887f-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,285 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e4215b0-eff3-11e9-9881-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,298 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e441026-eff3-11e9-a555-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,310 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e45e3a2-eff3-11e9-8db2-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,322 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e47b724-eff3-11e9-aeb0-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,334 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e498aa2-eff3-11e9-96c7-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,346 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e4b5e24-eff3-11e9-b9fb-dca266365d7c","status":0,"msg":"ok"}
+2019-10-16 17:02:02,358 - root - INFO - produce_data - add_one_partner_group - 40 - {"reqId":"9e4d31a4-eff3-11e9-88e2-dca266365d7c","status":0,"msg":"ok"}
