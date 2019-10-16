@@ -90,6 +90,7 @@ class ReadYamlUtils(object):
                                             if str_key_feature_value is not None:
                                                 json_data[key] = str_key_feature_value
                                             else:
+                                                # json_data[key] = json_data[key]
                                                 pass
                                         else:
                                             pass
@@ -118,14 +119,15 @@ class ReadYamlUtils(object):
             _log.error("处理处理发生错误+\n{}".format(e))
 
 if __name__ == '__main__':
-    name = PATH("../test_data/1_face_identify.yaml")
+    name = PATH("../test_data/4_face_compare_features.yaml")
     x = ReadYamlUtils(name)
-    print(x.read_data())
-    print(type(x.read_data()))
-    kk = {"55test222": 1, "test2": ".jpg"}
-    str_a = "testimagetest"
-    pattern = re.compile(".*image.*")
-    print(pattern.match(str_a).group(0))
-    mm = x.read_data_for_face_detect(PATH("../public/"), ".")
-    kk = json.dumps(mm, ensure_ascii=False, indent=2)
-    print(kk)
+    # print(x.read_data())
+    # print(type(x.read_data()))
+    # kk = {"55test222": 1, "test2": ".jpg"}
+    # str_a = "testimagetest"
+    # pattern = re.compile(".*image.*")
+    # print(pattern.match(str_a).group(0))
+    mm = x.read_data_for_face_detect(PATH("../public/img"), PATH("../public/features"))
+    print(mm)
+    # kk = json.dumps(mm, ensure_ascii=False, indent=2)
+    # print(kk)

@@ -1,64 +1,78 @@
 
 title: "5.3 人脸比对-根据两张图片"
 method: "post"
-url: "http://175.168.0.139:8080/"
+url: "http://175.168.0.29:8089/"
 sign: "api/face/identify/compareByImage"
 cases:
-- case_title: 测试正常流程，验证能对两张有人脸的同一人照片进行比对
+- case_title: 测试正常流程，验证能对两张有人脸的同一人照片进行比对]
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "image1.jpg","image2": "image2.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": "image2.jpg"}
   }
 - case_title: 测试另一种情况，验证能对两张有人脸的不同一人照片进行比对
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "image1.jpg","image2": "image_no_1_2.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": "image_no_1_2.jpg"}
   }
 - case_title: 验证能对两张多人脸照片进行比对
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "两人.jpg","image2": "两人.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "两人.jpg","image2": "两人.jpg"}
   }
 - case_title: 验证能对不同两张多人脸照片进行比对
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "多人脸.jpg","image2": "两人.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "多人脸.jpg","image2": "两人.jpg"}
   }
 - case_title: 验证未授权时不能进行接口调用
+  status: -1
   body: {"reqId": "reqId",
   "data": {"partnerId": "未授权partnerId","image1": "多人脸.jpg","image2": "两人.jpg"}
   }
 - case_title: 验证reqId为空值时，服务器不会出错
+  status: 0
   body: {"reqId": "",
-  "data": {"partnerId": "授权partnerId","image1": "多人脸.jpg","image2": "两人.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": "image1.jpg"}
   }
 - case_title: 验证reqId为空时，服务器不会出错
+  status: 0
   body: {"reqId": ~,
-  "data": {"partnerId": "授权partnerId","image1": "多人脸.jpg","image2": "两人.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": "image1.jpg"}
   }
 - case_title: 验证data为空值时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
   "data": ""
   }
 - case_title: 验证data为空时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
   "data": ~
   }
 - case_title: 验证image1参数空值时，服务器处理正常
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "","image2": "image1.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "","image2": "image1.jpg"}
   }
 - case_title: 验证image1参数空时，服务器处理正常
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": ~,"image2": "image1.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": ~,"image2": "image1.jpg"}
   }
 - case_title: 验证image2参数空时，服务器处理正常
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "image1.jpg","image2": ~}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": ~}
   }
 - case_title: 验证image2参数空值时，服务器处理正常
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "image1.jpg","image2": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1.jpg","image2": ""}
   }
 - case_title: 验证image1参数为非base64图片编码格式时，服务器能正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","image1": "image1","image2": "image1.jpg"}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","image1": "image1","image2": "image1.jpg"}
   }
 
 

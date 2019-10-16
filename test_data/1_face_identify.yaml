@@ -1,61 +1,74 @@
 
 title: "人脸检测接口"
 method: "post"
-url: "http://175.168.0.139:8080/"
-sign: ""
+url: "http://175.168.0.29:8089/"
+sign: "api/face/identify/detect"
 cases:
 - case_title: 测试正常流程,能对有单个人脸的图片进行检测
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"image": "1.jpg","partnerId": "partnerId"}
+  "data": {"image": "1.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 - case_title: 测试正常流程,能对有多个人脸的图片进行检测
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": "partnerId"}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 
 - case_title: 无人脸时（其他图片），不能检测到人脸的数量及位置
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": "partnerId"}
+  "data": {"image": "无人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 - case_title: 在未授权时，不能进行人脸检测接口调用
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": "未授权partnerId"}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c32"}
   }
 - case_title: 验证reqId为空值时，服务器不会出错
+  status: 0
   body: {"reqId": "",
-  "data": {"image": "多人脸.jpg","partnerId": "未授权partnerId"}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 - case_title: 验证reqId为空时，服务器不会出错
+  status: 0
   body: {"reqId": ~,
-  "data": {"image": "多人脸.jpg","partnerId": "未授权partnerId"}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 - case_title: 验证data空值时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
   "data": ""
   }
 - case_title: 验证data空时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
   "data": ~
   }
 - case_title: 验证partnerid错误时，接口返回正确
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": "错误partnerId"}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c31"}
   }
 - case_title: 验证partneri空值，接口返回正确
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": ""}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": ""}
   }
 - case_title: 验证partneri空，接口返回正确
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "多人脸.jpg","partnerId": ~}
+  "data": {"image": "多人脸_gaitubao_.jpg","partnerId": ~}
   }
 - case_title: 验证image参数为非base64图片编码格式时，服务器能正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "ttdfftftgd","partnerId": "正确授权的partnerId"}
+  "data": {"image": "ttdfftftgd","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 - case_title: 验证image参数大于1M时，不能进行检测
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"image": "大于1M.jpg","partnerId": "正确授权的partnerId"}
+  "data": {"image": "大于1M小.jpg","partnerId": "1409b37cdb58414bbd0fa6ecf1929c33"}
   }
 
 

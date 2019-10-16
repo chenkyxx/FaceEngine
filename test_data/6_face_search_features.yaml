@@ -1,75 +1,92 @@
 
 title: "5.6 人脸查找 - 根据特征"
 method: "post"
-url: "http://175.168.0.139:8080/"
+url: "http://175.168.0.29:8089/"
 sign: "api/face/identify/searchByFeature"
 cases:
 - case_title: 验证能正确返回最高分数的的一个结果
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证传入的特征不是注册的人也能返回分数最高的一个结果
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "13_no_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "13_no_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 未授权时，不能进行人脸查找
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "未授权partnerId","feature": "13_no_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "未授权partnerId","feature": "13_no_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证reqId为空值时，服务器不会出错
+  status: 0
   body: {"reqId": "",
-  "data": {"partnerId": "授权partnerId","feature": "13_no_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "13_no_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证reqId为空时，服务器不会出错
+  status: 0
   body: {"reqId": ~,
-  "data": {"partnerId": "授权partnerId","feature": "13_no_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "13_no_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证data为空值时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
-  "data": ""
+  "data": {}
   }
 - case_title: 验证data为空时，服务器不会出错
+  status: -1
   body: {"reqId": "reqId",
   "data": ~
   }
 - case_title: 验证partnetId为空值时，服务器正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证partnetId为空时，服务器正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": ~,"feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": ""}
+  "data": {"partnerId": ~,"feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证groupName为空值时，服务器处理正确
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": [],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证groupName为空时，服务器处理正确
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": ~,"liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": [~],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证groupName为不存在的组时，服务器处理正确
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "no_exist_group","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["no_exist_group"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证groupName为其他的组时，服务器处理正确
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "other_exist_group","liveImage": "","matchNum": ""}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["other_exist_group"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证matchNum为10时，服务器能正确处理
+  status: 0
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": 1}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 1}
   }
 - case_title: 验证matchNum为11时，服务器能正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": 11}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 11}
   }
 - case_title: 验证matchNum为-1时，服务器能正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": -1}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": -1}
   }
 - case_title: 验证matchNum为0时，服务器能正确处理
+  status: -1
   body: {"reqId": "reqId",
-  "data": {"partnerId": "授权partnerId","feature": "11_regist.txt","groupName": "groupName_","liveImage": "","matchNum": 0}
+  "data": {"partnerId": "1409b37cdb58414bbd0fa6ecf1929c33","feature": "11_regist.txt","groupName": ["TestGroupName"],"liveImage": "","matchNum": 0}
   }
 

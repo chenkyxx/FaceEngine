@@ -13,10 +13,21 @@ from public.Assert import AssertResult
 from public.FaceEngine import FaceEngine
 
 
+# class My(unittest.TestCase):
+#     def run(self, result=None):
+#         return super().run(result)
+#
+#     def __init__(self, methodName='api'):
+#         super().__init__(methodName)
+
+
 class TestApi(unittest.TestCase):
     __config = ConfigUtils(PATH("../config/config.ini"))
     __server = FaceEngine(__config.get_value_by_section_and_option("server", "engine_host"))
     __assert = AssertResult()
+
+    def testapi_aa(self):
+        print(00000000)
 
     def a(self):
         print(self.__config.get_value_by_section_and_option("server", "engine_host"))
@@ -24,17 +35,17 @@ class TestApi(unittest.TestCase):
     def test_0_face_register(self):
         """人脸注册"""
         res = self.__server.api_face_register(reqId="11",
-                                              partnerId="",
-                                              groupName="",
-                                              faceCode="",
-                                              faceName=self.__server.get_image_to_base64("11"),
-                                              faceImage="")
+                                              partnerId="1409b37cdb58414bbd0fa6ecf1929c33",
+                                              groupName="TestGroupName",
+                                              faceCode="facecode_11_register",
+                                              faceName="name",
+                                              faceImage=self.__server.get_image_to_base64(PATH("../public/img/11_regist.jpg")))
         try:
-            self.__assert.judge_code(-1, res.text)
+            self.__assert.judge_code(0, res.text)
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(res.text+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_1_face_remove(self):
         """人脸删除"""
@@ -46,7 +57,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_2_face_clear(self):
         """人脸清空"""
@@ -57,7 +68,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_3_get_one_face(self):
         """获取单个人脸信息"""
@@ -69,7 +80,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_4_query_group_faces(self):
         """查询当前组内人脸信息"""
@@ -84,7 +95,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_5_face_detect(self):
         """人脸检测"""
@@ -94,7 +105,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_6_face_get_features(self):
         """人脸特征提取"""
@@ -104,7 +115,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_6_face_compare_by_images(self):
         """根据两张图片进行比对"""
@@ -116,7 +127,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_7_face_compare_by_features(self):
         """根据两个特征进行比对"""
@@ -128,7 +139,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_8_face_search_by_image(self):
         """人脸查找 根据图片"""
@@ -142,7 +153,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_9_face_search_by_feature(self):
         """人脸查找 根据特征"""
@@ -156,7 +167,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
     def test_9_9_face_record_query(self):
         """人脸记录查询"""
@@ -172,7 +183,7 @@ class TestApi(unittest.TestCase):
             json_format = json.dumps(eval(res.text), ensure_ascii=False, indent=2)
             print("\n"+json_format)
         except Exception as e:
-            print(res+"\n"+"{}".format(e), file=sys.stderr)
+            print(str(res)+"\n"+"{}".format(e), file=sys.stderr)
 
 if __name__ == '__main__':
     unittest.main()

@@ -43,11 +43,14 @@ class AssertResult(object):
             dict_obj = void[1]
             try:
                 if dict_obj["status"] == status:
-                    self.__log.info("业务正常，status为{}".format(status))
+                    self.__log.info("断言正常，status为{}".format(status))
+                    return True
                 else:
-                    self.__log.warning("业务不正常,status 不满足0"+"\n当前的status的值为{}".format(dict_obj["status"]))
+                    self.__log.warning("业务不正常,status 不满足0"+"-----当前的status的值为{}".format(dict_obj["status"]))
+                    return False
             except Exception as e:
                 self.__log.error("服务器返回出错，json体中没有status字段+\n+{}".format(e))
+                return False
         else:
             self.__log.error("xxxxx")
 if __name__ == '__main__':

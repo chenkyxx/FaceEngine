@@ -240,13 +240,15 @@ class FaceEngine(object):
                         data="",
                         reqId="",
                         name="",
-                        partnerId=""
+                        partnerId="",
+                        threshold=None
                         ):
         """3.1 新增用户组
             描述：新增管理人脸的组,最多不超过99组。"""
         if data_index == 0:
             data = {"name": name,
-                    "partnerId": partnerId}
+                    "partnerId": partnerId,
+                    "threshold": threshold}
         else:
             data = data
         body = {"reqId": reqId,
@@ -705,13 +707,15 @@ class FaceEngine(object):
             return "请求发送失败"+"\n出错方式为{}".format(str(e))
 
 if __name__ == '__main__':
-    aa = FaceEngine(host="http://175.168.0.139:8080/")
+    aa = FaceEngine(host="http://175.168.0.29:8089/")
     print(FaceEngine.get_format_time())
-    json_str = aa.api_face_clear().text
-    aaa = json.dumps(eval(json_str), ensure_ascii=False, indent=2)
-    # print(aa.api_face_clear().text)
-    print(aaa)
-    print(aa.get_image_to_base64("1.jpg"))
+
+    # res = aa.api_partner_add(reqId="reqID", partnerName="test_partName", ValidityBegin="2019-10-13 15:36:34",
+    #                          ValidityEnd="2020-10-14 15:36:34")
+    # print(res.text)
+    res = aa.api_group_add(reqId="reqId", name="TestGroupName", partnerId="1409b37cdb58414bbd0fa6ecf1929c33",
+                           threshold=0.9)
+    print(res.text)
 
 
 

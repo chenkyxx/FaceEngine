@@ -5,6 +5,7 @@
 # @FileName: Request_tools.py
 # @Software: PyCharm
 import hashlib
+import json
 import uuid
 
 import requests
@@ -15,6 +16,7 @@ _log = MyLog("RequestTools").logger
 
 class RequestTools(object):
     __apiKey = "48d534fc6e7f451ca376baaa750729fc"
+    __apiKey_self = "6fb96353aff34a1186a29e6f038a7582"
 
     def __init__(self):
         self.session = requests.session()
@@ -22,6 +24,16 @@ class RequestTools(object):
     @staticmethod
     def get_uuid():
         return str(uuid.uuid1()).replace("-", "")
+
+    @staticmethod
+    def get_json_file(object_:dict):
+        try:
+            fp_ = open("json.json", "w", encoding="utf-8")
+            json.dump(object_,fp_)
+            fp_.close()
+            return True
+        except Exception as e:
+            return False
 
     @staticmethod
     def get_time_stamp():
@@ -76,6 +88,7 @@ class RequestTools(object):
                 _log.warning("请求方法没有按照规定,只有get和post")
                 return None
         except Exception as e:
+            e = str(e)
             return "{}".format(e)
 
 if __name__ == '__main__':
